@@ -1,0 +1,12 @@
+# opera
+# deb http://deb.opera.com/opera/ stable non-free 
+
+# virtualbox
+# deb http://download.virtualbox.org/virtualbox/debian/ wheezy contrib 
+
+# GAMES - gottet and simsu
+#deb http://download.opensuse.org/repositories/home:gottcode/Debian_7.0/ /
+
+# Latest iceweasel (australis)
+# deb http://mozilla.debian.net/ jessie-backports iceweasel-release
+
