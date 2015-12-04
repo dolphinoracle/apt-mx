@@ -5,16 +5,25 @@ ME=${0##*/}
 ZDIR=/usr/share/zoneinfo
 SDIR=/etc/apt/sources.list.d
 
-HOST_PREFIXES="NL US"
+HOST_PREFIXES="NL LA UT OLD_US"
 HOST_TYPES="AX MX MP"
+US_HOST_LIST="LA UT"
 
-US_AX_HOST=antix.daveserver.info
-US_MP_HOST=main.mepis-deb.org/mepiscr
-US_MX_HOST=main.mepis-deb.org/mx
+UT_AX_HOST=antix.daveserver.info
+UT_MP_HOST=mxrepo.com/mepiscr
+UT_MX_HOST=mxrepo.com/mx
+
+LA_AX_HOST=iso.mxrepo.com/antix
+LA_MP_HOST=iso.mxrepo.com/mepiscr
+LA_MX_HOST=iso.mxrepo.com/mx
 
 NL_AX_HOST=nl.mxrepo.com/antix
 NL_MP_HOST=nl.mxrepo.com/mepiscr
 NL_MX_HOST=nl.mxrepo.com/mx
+
+OLD_US_AX_HOST=antix.daveserver.info
+OLD_US_MP_HOST=main.mepis-deb.org/mepiscr
+OLD_US_MX_HOST=main.mepis-deb.org/mx
 
 usage() {
     local ret=${1:-0}
@@ -80,6 +89,8 @@ main() {
     local   deb_code=$(deb_code   $tz)
     vsay "deb mirror: $deb_code"
 
+    [ "$mx_ax_code" = "US"  ] && assign_random_server "US" $US_HOST_LIST
+
     # Only update if the mirror is different from the one we want
     SED_EXPR="-e /ftp\.$deb_code\.debian\.org/!s=(http://ftp\.)[a-z][a-z](\.debian.org/debian/)=\1$deb_code\2="
     SED_EXPR_P="${SED_EXPR}p"
@@ -128,6 +139,25 @@ assign_exprs() {
         #echo SED_$type=$sed
         SED_EXPR="$SED_EXPR -e $sed"
         SED_EXPR_P="$SED_EXPR_P -e ${sed}p"
+    done
+}
+
+# Assign random servers for all types based on prefixes.  The first
+# arg is the prefix of the target string.  The remaining args are
+# the prefixes of the strings we are assigning from.  You can get
+# rough weighting by repeating prefixes.
+assign_random_server() {
+    local targ=$1  prefix  type
+    shift
+
+    local cnt=$#
+    local rand=$(($RANDOM % cnt))
+    shift $rand
+    prefix=$1
+  
+    for type in $HOST_TYPES; do
+        #echo ${targ}_${type}_HOST=\$${prefix}_${type}_HOST
+        eval ${targ}_${type}_HOST=\$${prefix}_${type}_HOST
     done
 }
 
