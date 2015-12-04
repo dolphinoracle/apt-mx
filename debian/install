@@ -2,9 +2,4 @@ antix.list                     /etc/apt/sources.list.d
 debian.list                    /etc/apt/sources.list.d
 various.list                   /etc/apt/sources.list.d
 mx.list                        /etc/apt/sources.list.d
-siduction.list                 /etc/apt/sources.list.d
-changelog.gz                   /usr/share/doc/apt-mx 
-copyright                      /usr/share/doc/apt-mx 
-preferences                    /var/lib/synaptic
-synaptic-pins                  /etc/apt/preferences.d
 localize-repo                  /sbin 
