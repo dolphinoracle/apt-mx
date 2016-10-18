@@ -3,6 +3,3 @@
 
 # virtualbox
 # deb http://download.virtualbox.org/virtualbox/debian/ jessie contrib 
-
-# Latest iceweasel (australis)
-# deb http://mozilla.debian.net/ jessie-backports iceweasel-release
