@@ -3,8 +3,10 @@ apt-mx (0.1.5) mx; urgency=medium
   * Commented out mx 15 test repo in mx.list
   * Added debian-stable-updates.list
   * Removed issue file
+  * New mx16.list
+  * Removed mx16 repo from mx.list
 
- -- anticapitalista <antix@operamail.com>  Sun, 06 Nov 2016 23:23:04 +0200
+ -- anticapitalista <antix@operamail.com>  Wed, 09 Nov 2016 23:20:04 +0200
 
 apt-mx (0.1.4) mx; urgency=medium
 
