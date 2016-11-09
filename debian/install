@@ -1,6 +1,7 @@
+debian-stable-updates.list etc/apt/sources.list.d
 antix.list 	etc/apt/sources.list.d
 debian.list 	etc/apt/sources.list.d
 various.list 	etc/apt/sources.list.d
 mx.list 	etc/apt/sources.list.d
-mx.16.list 	etc/apt/sources.list.d		
+mx.16.list 	etc/apt/sources.list.d	
 localize-repo 	sbin 
