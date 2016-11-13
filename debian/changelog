@@ -1,3 +1,15 @@
+apt-mx (0.1.5.3) mx; urgency=medium
+
+  * Revert accidental change back from mxrepo.com to main.mepis-deb.org
+
+ -- Timothy E. Harris <maintainer@mepiscommunity.org>  Sun, 13 Nov 2016 11:20:33 -0500
+
+apt-mx (0.1.5.2) mx; urgency=medium
+
+  * Restore MX-16 repo to MX-16 users
+
+ -- Timothy E. Harris <maintainer@mepiscommunity.org>  Sat, 12 Nov 2016 15:40:23 -0500
+
 apt-mx (0.1.5) mx; urgency=medium
 
   * Commented out mx 15 test repo in mx.list
