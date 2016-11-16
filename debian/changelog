@@ -1,3 +1,9 @@
+apt-mx (0.1.5.5) mx; urgency=medium
+
+  * Updated localize-repo to include Kazakh
+
+ -- anticapitalista <antix@operamail.com>  Wed, 16 Nov 2016 19:07:58 +0200
+
 apt-mx (0.1.5.4) mx; urgency=medium
 
   * Use mxrepo.com in mx.list and mx16.list" 
