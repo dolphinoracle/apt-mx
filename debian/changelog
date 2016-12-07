@@ -1,3 +1,9 @@
+apt-mx (0.1.5.6) mx; urgency=medium
+
+  * Removed mx16 test repo from mx16.list
+
+ -- anticapitalista <antix@operamail.com>  Wed, 07 Dec 2016 18:43:22 +0200
+
 apt-mx (0.1.5.5) mx; urgency=medium
 
   * Updated localize-repo to include Kazakh
