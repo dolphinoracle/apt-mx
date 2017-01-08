@@ -1,3 +1,9 @@
+apt-mx (0.1.5.7) mx; urgency=medium
+
+  * Add mirrors in France and Germany 
+
+ -- anticapitalista <antix@operamail.com>  Sun, 08 Jan 2017 16:35:06 +0200
+
 apt-mx (0.1.5.6) mx; urgency=medium
 
   * Removed mx16 test repo from mx16.list
