@@ -1,3 +1,9 @@
+apt-mx (0.1.5.8) mx; urgency=medium
+
+  * Add mirror location info and new -L --list option
+
+ -- anticapitalista <antix@operamail.com>  Tue, 10 Jan 2017 12:43:30 +0200
+
 apt-mx (0.1.5.7) mx; urgency=medium
 
   * Add mirrors in France and Germany 
