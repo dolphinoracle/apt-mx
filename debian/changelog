@@ -1,3 +1,9 @@
+apt-mx (0.1.5.9) mx; urgency=medium
+
+  * stretch mx17
+
+ -- anticapitalista <antix@operamail.com>  Thu, 27 Jul 2017 21:11:30 +0200
+
 apt-mx (0.1.5.8) mx; urgency=medium
 
   * Add mirror location info and new -L --list option
