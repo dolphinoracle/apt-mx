@@ -1,3 +1,15 @@
+apt-mx (0.1.9.1) mx; urgency=medium
+
+  * updated stretch test repo definition
+
+ -- dolphin oracle <dolphinoracle@gmail.com>  Sat, 14 Oct 2017 13:01:30 +0200
+
+apt-mx (0.1.9.0) mx; urgency=medium
+
+  * updated localize-repo
+
+ -- dolphin oracle <dolphinoracle@gmail.com>  Fri, 22 Sep 2017 19:43:30 +0200
+
 apt-mx (0.1.6.1) mx; urgency=medium
 
   * fixed stretch test repo entry
