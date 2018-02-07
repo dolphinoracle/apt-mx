@@ -1,3 +1,9 @@
+apt-mx (0.1.9.3) mx; urgency=medium
+
+  * removed deb-multimedia from default list 
+
+ -- dolphin oracle <dolphin@littlebyte>  Wed, 07 Feb 2018 18:21:08 -0500
+
 apt-mx (0.1.9.2) mx; urgency=medium
 
   * updated localize-repo (thanks bitjam)
